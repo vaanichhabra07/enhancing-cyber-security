@@ -1,0 +1,14 @@
+{
+  "sql_injection_payloads": [
+    "'",
+    "1' OR '1'='1",
+    "\" OR 1=1--",
+    "'; DROP TABLE users; --"
+  ],
+  "xss_payloads": [
+    "<script>alert('xss')</script>",
+    "<img src='javascript:alert(\"xss\")'>",
+    "<body onload=alert('xss')>",
+    "\" onerror=\"alert('xss')\""
+  ]
+}
